@@ -1,16 +1,33 @@
 # bash script for installing the github.com/wovo
 # C++ embedded development environment on ubuntu
 
+# geforked van WOVO en aangepast voor HU-TI-DEV door Nico Verduin 
+# dd 25-4-2022
+
 # install what is available from the repositories
 sudo apt install -y git make gcc-10 avrdude python-dev 
 sudo apt install -y libsfml-dev codelite libusb-1.0-0-dev stlink-tools
 sudo apt install -y autoconf build-essential pkg-config
 
 # install the stuff from my repository
-git clone https://www.github.com/wovo/bmptk
-git clone https://www.github.com/wovo/hwlib
-git clone https://www.github.com/wovo/hwlib-examples
-git clone https://www.github.com/wovo/godafoss
+git clone https://www.github.com/HU-TI-DEV/bmptk
+git clone https://www.github.com/HU-TI-DEV/hwlib
+git clone https://www.github.com/HU-TI-DEV/hwlib-examples
+git clone https://www.github.com/HU-TI-DEVgodafoss
+
+#specifiek voor de vakken V1OOPC, V2CPSE1 en V2CPSE2
+git clone https://www.github.com/HU-TI-DEV/v1oopc-examples
+git clone https://www.github.com/HU-TI-DEV/v2cpse1-examples
+git clone https://www.github.com/HU-TI-DEV/v2cpse2-examples
+git clone https://www.github.com/HU-TI-DEV/rtos
+git clone https://www.github.com/HU-TI-DEV/v2thde-examples
+git clone https://www.github.com/HU-TI-DEV/HCT
+
+# Catch2 with correct version
+git clone https://www.github.com/catchorg/Catch2
+cd Catch2
+git checkout v2.x 
+cd ..
 
 # other stuff is built inside the tools directory
 mkdir tools
