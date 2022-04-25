@@ -13,7 +13,7 @@ sudo apt install -y autoconf build-essential pkg-config
 git clone https://www.github.com/HU-TI-DEV/bmptk
 git clone https://www.github.com/HU-TI-DEV/hwlib
 git clone https://www.github.com/HU-TI-DEV/hwlib-examples
-git clone https://www.github.com/HU-TI-DEVgodafoss
+git clone https://www.github.com/HU-TI-DEV/godafoss
 
 #specifiek voor de vakken V1OOPC, V2CPSE1 en V2CPSE2
 git clone https://www.github.com/HU-TI-DEV/v1oopc-examples
