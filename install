@@ -60,14 +60,14 @@ sudo python ubuntu-toolchains/add_path.py $PWD/tools/arm-gcc/bin
 #sudo python ubuntu-toolchains/add_path.py $PWD/tools/riscv-gcc/bin
 
 # build and install the teensy loader
-cd tools
-git clone https://github.com/PaulStoffregen/teensy_loader_cli
-cd teensy_loader_cli
-make
-sudo chown root teensy_loader_cli
-sudo chmod +s teensy_loader_cli
-sudo python ubuntu-toolchains/add_path.py $PWD/tools/teensy_loader_cli/teensy_loader_cli
-cd ../..
+#cd tools
+#git clone https://github.com/PaulStoffregen/teensy_loader_cli
+#cd teensy_loader_cli
+#make
+#sudo chown root teensy_loader_cli
+#sudo chmod +s teensy_loader_cli
+#sudo python ubuntu-toolchains/add_path.py $PWD/tools/teensy_loader_cli/teensy_loader_cli
+#cd ../..
 
 # build and install risc-v dfu loader
 #cd tools
