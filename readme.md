@@ -34,7 +34,7 @@ and followed the instructions, using the default options.
 Log in, open a shell, and run these commands:
 ````shell
     sudo apt install -y git
-    git clone https://www.github.com/wovo/ubuntu-toolchains
+    git clone https://www.github.com/HU-TI-DEV/ubuntu-toolchains
     source ubuntu-toolchains/install
 ````    
 The appropriate path additions are made to /etc/environment.
