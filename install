@@ -50,14 +50,14 @@ mv $DIR tools/arm-gcc
 sudo python ubuntu-toolchains/add_path.py $PWD/tools/arm-gcc/bin
 
 # install the RISC V compiler
-SOURCE=https://github.com/stnolting/riscv_gcc_prebuilt/raw/master/data/riscv32-unknown-elf.gcc-10.1.0.rv32e.ilp32e.newlib.tar.gz
-wget $SOURCE -O tools/downloads/riscv-gcc.tgz
-cd tools
-mkdir riscv-gcc
-cd riscv-gcc
-tar -xf ../downloads/riscv-gcc.tgz
-cd ../..
-sudo python ubuntu-toolchains/add_path.py $PWD/tools/riscv-gcc/bin
+#SOURCE=https://github.com/stnolting/riscv_gcc_prebuilt/raw/master/data/riscv32-unknown-elf.gcc-10.1.0.rv32e.ilp32e.newlib.tar.gz
+#wget $SOURCE -O tools/downloads/riscv-gcc.tgz
+#cd tools
+#mkdir riscv-gcc
+#cd riscv-gcc
+#tar -xf ../downloads/riscv-gcc.tgz
+#cd ../..
+#sudo python ubuntu-toolchains/add_path.py $PWD/tools/riscv-gcc/bin
 
 # build and install the teensy loader
 cd tools
@@ -70,13 +70,13 @@ sudo python ubuntu-toolchains/add_path.py $PWD/tools/teensy_loader_cli/teensy_lo
 cd ../..
 
 # build and install risc-v dfu loader
-cd tools
-git clone git://git.code.sf.net/p/dfu-util/dfu-util
-cd dfu-util
-./autogen.sh
-./configure
-sudo make install
-cd ../..
+#cd tools
+#git clone git://git.code.sf.net/p/dfu-util/dfu-util
+#cd dfu-util
+#./autogen.sh
+#./configure
+#sudo make install
+#cd ../..
 
 # build the lpc21_isp tool
 # and set root permission for TTY access
